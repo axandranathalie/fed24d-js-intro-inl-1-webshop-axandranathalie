@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlawlessForever</title>
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    >
+  </head>
+  <body>
+    <main>
+      <header>
+        <input
+          type="checkbox"
+          class="menuToggle"
+          id="menuToggle"
+          aria-label="Öppnar/stänger varukorgen"
+          tabindex="0"
+        >
+
+        <div class="menu">
+          <img src="asset/images/logo.png" alt="logga på sminkborstar" width="1024" height="1024">
+          <h1>FlawlessForever</h1>
+
+          <label for="menuToggle" class="buttonWrapper" tabindex="0">
+            <span class="menuButton">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </span>
+          </label>
+
+          <nav id="cart" class="cart">
+            <h2>Varukorg</h2>
+            <div id="cartContent"></div>
+            <div class="payment">
+              <div class="paymentOptions">
+                <section id="checkout">
+                  <h2>Beställning</h2>
+                  <form id="orderForm" class="orderForm">
+                    <div class="formGroup">
+                      <label for="firstName">Förnamn:</label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        required
+                      >
+                      <span class="validationError" id="nameSpan"></span>
+                    </div>
+                    <div class="formGroup">
+                      <label for="lastName">Efternamn:</label>
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        required
+                      >
+                      <span class="validationError" id="lastNameSpan"></span>
+                    </div>
+                    <div class="formGroup">
+                      <label for="address">Adress:</label>
+                      <input type="text" id="address" name="address" required>
+                      <span class="validationError" id="addressSpan"></span>
+                    </div>
+                    <div class="formGroup">
+                      <label for="postalCode">Postnummer:</label>
+                      <input
+                        type="text"
+                        id="postalCode"
+                        name="postalCode"
+                        required
+                      >
+                      <span class="validationError" id="postalCodeSpan"></span>
+                    </div>
+                    <div class="formGroup">
+                      <label for="city">Postort:</label>
+                      <input type="text" id="city" name="city" required>
+                      <span class="validationError" id="citySpan"></span>
+                    </div>
+                    <div class="formGroup">
+                      <label for="portCode">Portkod (valfritt):</label>
+                      <input type="text" id="portCode" name="portCode">
+                    </div>
+                    <div class="formGroup">
+                      <label for="phone">Telefon (mobil):</label>
+                      <input type="tel" id="phone" name="phone" required>
+                      <span class="validationError" id="phoneSpan"></span>
+                    </div>
+                    <div class="formGroup">
+                      <label for="email">E-postadress:</label>
+                      <input type="email" id="email" name="email" required>
+                      <span class="validationError" id="emailSpan"></span>
+                    </div>
+
+                    <div class="formGroup">
+                      <label for="discountCode">Rabattkod:</label>
+                      <input
+                        type="text"
+                        id="discountCode"
+                        class="discountCode"
+                        name="discountCode"
+                      >
+                    </div>
+
+                    <div class="paymentOptions">
+                      <div class="selector">
+                        <label id="invocePaymentRadio">
+                          <input
+                            type="radio"
+                            name="payment-option"
+                            value="invoice"
+                          >
+                          <span>Faktura</span>
+                        </label>
+                        <label>
+                          <input
+                            type="radio"
+                            name="payment-option"
+                            value="card"
+                            checked
+                          >
+                          <span>Kort</span>
+                        </label>
+                      </div>
+
+                      <div class="invoice hidden" id="invoice">
+                        <label>
+                          <span>Personnummer</span>
+                          <input
+                            type="text"
+                            name="personal-id"
+                            id="personalID"
+                            value="19850505-1234"
+                          >
+                        </label>
+                      </div>
+
+                      <div class="card" id="card">
+                        <label for="creditCardNumber">
+                          Kortnummer
+                        </label>
+                        <input
+                          type="number"
+                          id="creditCardNumber"
+                          value="5100080000000000"
+                          aria-label="Kortnummer"
+                        >
+                        <br>
+                        <label for="creditCardYear">
+                          År
+                        </label>
+                        <input
+                          type="number"
+                          class="small"
+                          placeholder="YY"
+                          id="creditCardYear"
+                          aria-label="År"
+                        >
+                        
+                        <label for="creditCardMonth">
+                          Månad
+                        </label>
+                        <input
+                          type="number"
+                          class="small"
+                          placeholder="MM"
+                          id="creditCardMonth"
+                          aria-label="Månad"
+                        >
+                        <br>
+                        <label>
+                          <span>CVC</span>
+                          <input
+                            type="number"
+                            placeholder="123"
+                            id="creditCardCvc"
+                          >
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="formGroup">
+                      <label for="newsletter">
+                        <input type="checkbox" id="newsletter" checked>
+                        Jag vill ta emot nyhetsbrev
+                      </label>
+                    </div>
+
+                    <div class="formGroup">
+                      <label for="privacyPolicy">
+                        <input type="checkbox" id="privacyPolicy" required>
+                        Jag godkänner behandlingen av mina personuppgifter
+                      </label>
+                    </div>
+                    <div id="formErrors" class="hidden">
+                      <ul id="errorMessages" class="errorMessages"></ul>
+                    </div>
+
+                    <div class="form-actions">
+                      <button
+                        type="button"
+                        id="clearOrder"
+                        class="clearOrder"
+                        onclick="clearForm()"
+                      >
+                        Rensa beställning
+                      </button>
+                      <button id="orderBtn" disabled>Beställ</button>
+                    </div>
+                    <div id="orderConfirmationMessage" class="hidden"></div>
+                  </form>
+                </section>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div>
+        <button id="sortByName">Sortera på namn</button>
+        <button id="sortByPrice">Sortera på pris</button>
+        <button id="sortByCategory">Sortera på kategori</button>
+        <button id="sortByRating">Sortera på rating</button>
+      </div>
+
+      <section class="makeupProducts">
+        <h2>Produkter</h2>
+        <div id="productsList" class="productsList"></div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

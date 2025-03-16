@@ -1,0 +1,51 @@
+nav{
+    width: 75%;
+}
+
+h1{
+    font-size: 4rem;
+    margin: 19px 0 0 10px;
+    padding: 0;
+
+}
+.menu img{
+    margin-top: 5px;
+}
+
+.makeupProducts {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-gap: 20px; 
+    padding: 20px;
+
+    h2{
+        grid-column: span 12;
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+.productsList{
+    display: grid;
+    grid-column: span 12;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
+    padding: 20px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+
+
+
+
+
+
