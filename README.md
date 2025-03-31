@@ -1,27 +1,45 @@
-#FlawlessForever webshop
+# 🛍️ FlawlessForever Webshop  
 
-#projektbeskrivning
-- Det här projektet är en grundläggande webbutik där användare kan:
+## 📌 Projektbeskrivning  
+FlawlessForever är en grundläggande webbutik där användare kan:  
 
-    -Lägg till och ta bort produkter i kundvagnen.
-    -Justera mängden av varje produkt.
-    -Se totalpris för varukorgen, inklusive fraktkostnader.
-    -Välja betalmetod (kort eller faktura).
-    -Validera och skicka ett beställningsformulär.
+- ✅ Lägga till och ta bort produkter i kundvagnen  
+- ✅ Justera mängden av varje produkt  
+- ✅ Se totalpriset för varukorgen, inklusive fraktkostnader  
+- ✅ Välja betalmetod (kort eller faktura)  
+- ✅ Validera och skicka ett beställningsformulär  
 
-#teknikstack 
--html
--css (sass)
--vanilla java script
+---
 
-#Valideringsrapport av Css
-![valideringCss](readme_img/Screen_Shot_css.png)
+## 🛠️ Teknikstack  
+### 🔹 Använda teknologier  
+- **HTML**  
+- **CSS (SASS)**  
+- **Vanilla JavaScript**  
 
-#Valideringsrapport av Html
-![valideringHtml](readme_img/Screen_Shot_html.png)
+---
 
-#Lighthouse-analys
-![Lighthouse](readme_img/Lighthouse.png)
+## ✅ Valideringsrapporter  
+### 📄 CSS Validering  
+![CSS Validering](readme_img/Screen_Shot_css.png)  
 
-#Länk till live-versionen av mitt projekt.
-https://medieinstitutet.github.io/fed24d-js-intro-inl-1-webshop-axandranathalie/
+### 📄 HTML Validering  
+![HTML Validering](readme_img/Screen_Shot_html.png)  
+
+---
+
+## 🚀 Lighthouse-analys  
+### 📊 Prestanda och tillgänglighet  
+Lighthouse-analysen visar prestanda, tillgänglighet och bästa praxis för webbplatsen.  
+![Lighthouse Analys](readme_img/Lighthouse.png)  
+
+---
+
+## 🌍 Live-demo  
+### 🔗 Se projektet live här:  
+👉 [FlawlessForever Webshop](https://medieinstitutet.github.io/fed24d-js-intro-inl-1-webshop-axandranathalie/)  
+
+---
+
+Den här versionen är tydligare och mer organiserad med `###` för sektioner där det behövs. Hoppas du gillar den! 😊
+
