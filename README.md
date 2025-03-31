@@ -1,45 +1,42 @@
 # 🛍️ FlawlessForever Webshop  
 
-## 📌 Projektbeskrivning  
-FlawlessForever är en grundläggande webbutik där användare kan:  
+## 📌 Project Description  
+This project was part of a school assignment where I was tasked with building a basic webshop.  
 
-- ✅ Lägga till och ta bort produkter i kundvagnen  
-- ✅ Justera mängden av varje produkt  
-- ✅ Se totalpriset för varukorgen, inklusive fraktkostnader  
-- ✅ Välja betalmetod (kort eller faktura)  
-- ✅ Validera och skicka ett beställningsformulär  
+FlawlessForever is a simple e-commerce site where users can:  
+
+- ✅ Add and remove products from the cart  
+- ✅ Adjust the quantity of each product  
+- ✅ View the total price, including shipping costs  
+- ✅ Choose a payment method (card or invoice)  
+- ✅ Validate and submit an order form  
 
 ---
 
-## 🛠️ Teknikstack  
-### 🔹 Använda teknologier  
+## 🛠️ Tech Stack  
+### 🔹 Technologies Used  
 - **HTML**  
 - **CSS (SASS)**  
 - **Vanilla JavaScript**  
 
 ---
 
-## ✅ Valideringsrapporter  
-### 📄 CSS Validering  
-![CSS Validering](readme_img/Screen_Shot_css.png)  
+## ✅ Validation Reports  
+### 📄 CSS Validation  
+![CSS Validation](readme_img/Screen_Shot_css.png)  
 
-### 📄 HTML Validering  
-![HTML Validering](readme_img/Screen_Shot_html.png)  
-
----
-
-## 🚀 Lighthouse-analys  
-### 📊 Prestanda och tillgänglighet  
-Lighthouse-analysen visar prestanda, tillgänglighet och bästa praxis för webbplatsen.  
-![Lighthouse Analys](readme_img/Lighthouse.png)  
+### 📄 HTML Validation  
+![HTML Validation](readme_img/Screen_Shot_html.png)  
 
 ---
 
-## 🌍 Live-demo  
-### 🔗 Se projektet live här:  
+## 🚀 Lighthouse Analysis  
+### 📊 Performance and Accessibility  
+The Lighthouse analysis provides insights into performance, accessibility, and best practices.  
+![Lighthouse Analysis](readme_img/Lighthouse.png)  
+
+---
+
+## 🌍 Live Demo  
+### 🔗 View the live project here:  
 👉 [FlawlessForever Webshop](https://medieinstitutet.github.io/fed24d-js-intro-inl-1-webshop-axandranathalie/)  
-
----
-
-Den här versionen är tydligare och mer organiserad med `###` för sektioner där det behövs. Hoppas du gillar den! 😊
-
